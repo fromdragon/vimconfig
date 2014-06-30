@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/cljiang'
+let g:netrw_dirhist_2='/home/cljiang/work/watch_local'
+let g:netrw_dirhist_3='/home/cljiang/work/watch_local/abi'
+let g:netrw_dirhist_4='/home/cljiang'
+let g:netrw_dirhist_5='/home'
+let g:netrw_dirhist_6='/'
+let g:netrw_dirhist_7='/home/cljiang/work/w2_to_ingenic/external/bluetooth/bluedroid'
+let g:netrw_dirhist_8='/home/cljiang/work/w2_to_ingenic/external/bluetooth'
