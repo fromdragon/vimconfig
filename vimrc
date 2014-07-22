@@ -79,6 +79,7 @@ nmap <C-h> :set hlsearch!<cr>
 
 nmap <S-Left> :bp<cr>
 nmap <S-Right> :bn<cr>
+nmap <tab> :b#<cr>
 nmap BD :bd<cr>
 set hidden
 
@@ -250,4 +251,10 @@ let Grep_Default_Options = '-R'
 let Grep_Default_Filelist = getcwd().'/'
 let Grep_Skip_Files='*.o *.bak /*/tags *.out .*.swp'
 let Grep_Shell_Quote_Char=""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""gvim option"""""""""""""""""""""
+"hide gvim toolbar
+set guioptions-=m
+set guioptions-=T
 """"""""""""""""""""""""""""""""""""""""""""""""""
