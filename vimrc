@@ -147,6 +147,7 @@ nmap \mr :marks<cr>
 
 """"""""""""fuzzyfinder setting""""""""""""
 
+nmap <F6> :FufLine<CR>
 nmap <F5> :FufFileWithFullCwd<CR>
 nmap <F4> :FufBuffer<CR>
 
@@ -245,12 +246,12 @@ set tabline=%!MyTabLine()
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
 """""""""""""""""""grep option""""""""""""""""""""
-nmap <F6> :Grep<CR><C-u>
-let Grep_Skip_Dirs = '.git .repo'
-let Grep_Default_Options = '-R' 
-let Grep_Default_Filelist = getcwd().'/'
-let Grep_Skip_Files='*.o *.bak /*/tags *.out .*.swp'
-let Grep_Shell_Quote_Char=""""
+"nmap <F6> :Grep<CR><C-u>
+"let Grep_Skip_Dirs = '.git .repo'
+"let Grep_Default_Options = '-R' 
+"let Grep_Default_Filelist = getcwd().'/'
+"let Grep_Skip_Files='*.o *.bak /*/tags *.out .*.swp'
+"let Grep_Shell_Quote_Char=""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""gvim option"""""""""""""""""""""
@@ -258,3 +259,4 @@ let Grep_Shell_Quote_Char=""""
 set guioptions-=m
 set guioptions-=T
 """"""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType java set omnifunc=javacomplete#Complete
