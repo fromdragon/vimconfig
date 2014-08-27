@@ -71,9 +71,9 @@ nmap << 5<C-w><
 "display / hidden line num
 nmap <C-n> :set nu!<cr>
 " ignore / noignore case
-nmap 22 :set ignorecase!<cr>
+nmap \ic :set ignorecase!<cr>
 "search no wrap / wrap
-nmap 33 :set wrapscan!<cr>    
+nmap \ws :set wrapscan!<cr>    
 "highlight/no highlight search
 nmap <C-h> :set hlsearch!<cr>
 

@@ -20,7 +20,7 @@ endif
 
 let colors_name = "test"
 
-hi Normal 	ctermbg=236     ctermfg=251   "背景色
+hi Normal 	ctermbg=236     ctermfg=250   "背景色
 hi Comment 	ctermbg=236	    ctermfg=110   "注释
 hi CursorLine cterm=bold    ctermbg=238	  "下划线 
 hi Constant ctermbg=236		ctermfg=124	  "tab  <include>
