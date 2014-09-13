@@ -36,7 +36,7 @@ let g:mapleader = "\\"
 """""""""""""""auto save session"""""""""""""""""""""""
 
 "autocmd VimLeave * mksession! CljiangSession.vim
-nmap \clj :mksession! ~/CljiangSession.vim<CR>
+nmap <leader>clj :mksession! ~/CljiangSession.vim<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -305,3 +305,11 @@ function! VisualSearch(direction) range
     let @" = l:saved_reg
 endfunction
 
+
+
+
+"""""""""""""""save cursor position of quit for next open"""""""""""
+if has("autocmd")
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
