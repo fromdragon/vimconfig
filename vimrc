@@ -145,7 +145,7 @@ set laststatus=2
 """""""""lookupfile setting end""""""""
 
 """"""""""""""viminfo""""""""""""""""""
-"set viminfo+=%10
+set viminfo+=%100
 """""""""""""""""""""""""""""""""""""""
 
 """""""""""file mark"""""""""""""""
@@ -313,3 +313,56 @@ if has("autocmd")
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+""""""""""" auto sv and ld session
+"let g:AutoSessionFile="~/.CljiangSession.vim"
+""if filereadable(g:AutoSessionFile)
+""if argc() == 0
+"au VimEnter * call EnterHandler()
+"au SessionLoadPost * call SessionLoad()
+""endif
+""endif
+"au VimLeave * call LeaveHandler()
+"function! LeaveHandler()
+"exec "mks! ".g:AutoSessionFile
+"endfunction
+"function! EnterHandler()
+"exe "source ".g:AutoSessionFile
+"endfunction
+"
+"function! SessionLoad()
+"exe "bp"
+"endfunction
+"""""""""""""""""""""""""""""""""""""
+
+""""""""""" auto sv and ld viminfo
+let g:AutoInfoFile="~/.Cljiangviminfo"
+if filereadable(g:AutoInfoFile)
+""if argc() == 0
+au VimEnter * call EnterHandler()
+"au SessionLoadPost * call SessionLoad()
+endif
+""endif
+au VimLeave * call LeaveHandler()
+function! LeaveHandler()
+exec "wviminfo ".g:AutoInfoFile
+endfunction
+function! EnterHandler()
+exec "rviminfo ".g:AutoSessionFile
+endfunction
+"
+"function! SessionLoad()
+"exe "bp"
+"endfunction
+"""""""""""""""""""""""""""""""""""""
+"""""""""""keymap format"""""""""""""
+nmap <C-f> gg=G
+
+""""""""""move cursor in insert mode"""""""
+imap <C-j> <C-o>j
+imap <C-k> <C-o>k
+imap <C-h> <C-o>h
+imap <C-l> <C-o>l
+
+
