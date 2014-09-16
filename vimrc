@@ -173,7 +173,6 @@ set background=dark
 set cursorline "underline
 set t_Co=256
 colorscheme test
-hi CursorLine cterm=bold ctermbg=238
 """"""""""""""""""""""""""""""""""""""
 " 增强模式中的命令行自动完成操作
 set wildmenu
