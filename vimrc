@@ -358,10 +358,5 @@ endfunction
 """""""""""keymap format"""""""""""""
 nmap <C-f> gg=G
 
-""""""""""move cursor in insert mode"""""""
-imap <C-j> <C-o>j
-imap <C-k> <C-o>k
-imap <C-h> <C-o>h
-imap <C-l> <C-o>l
 
 

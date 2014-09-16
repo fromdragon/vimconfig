@@ -34,4 +34,10 @@ hi PmenuSel  cterm=bold ctermfg=2       ctermbg=234   "关键字补全菜单选�
 hi Search    cterm=bold ctermbg=100 ctermfg=251    "高亮显示
 hi Directory ctermfg=12                      "补全的目录
 
+if version > 700
+
+  au InsertEnter * hi StatusLine ctermbg=250 ctermfg=16
+  au InsertLeave * hi StatusLine ctermbg=232  ctermfg=250
+  
+endif
 " vim: sw=2
