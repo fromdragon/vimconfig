@@ -61,6 +61,7 @@ set shiftwidth=4
 set showmatch
 
 set incsearch
+set smartcase
 
 "set nowrapscan  "search no circle
 
@@ -208,7 +209,7 @@ vmap <C-y> "+y
 "set guitablabel=%{ShortTabLabel()}
 "set guitablabel=%F
 
-function MyTabLine()
+function! MyTabLine()
 let s = ''
 for i in range(tabpagenr('$'))
 	" 选择高亮
@@ -236,7 +237,7 @@ endif
 return s
 endfunction
 
-function MyTabLabel(n)
+function! MyTabLabel(n)
 let buflist = tabpagebuflist(a:n)
 let winnr = tabpagewinnr(a:n)
 let label = bufname(buflist[winnr - 1])
@@ -357,6 +358,11 @@ endfunction
 """""""""""""""""""""""""""""""""""""
 """""""""""keymap format"""""""""""""
 nmap <C-f> gg=G
+
+""""""""""save file"""""""""""""""""
+imap <C-a> <ESC>:w<cr>
+noremap <C-a> :w<cr>
+
 
 
 
