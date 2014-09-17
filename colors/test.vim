@@ -37,7 +37,7 @@ hi Directory ctermfg=12                      "补全的目录
 if version > 700
 
   au InsertEnter * hi StatusLine ctermbg=250 ctermfg=16
-  au InsertLeave * hi StatusLine ctermbg=232  ctermfg=250
+  au InsertLeave * hi StatusLine ctermbg=235  ctermfg=250
   
 endif
 " vim: sw=2
