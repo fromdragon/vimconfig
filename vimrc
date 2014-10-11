@@ -61,6 +61,7 @@ set shiftwidth=4
 set showmatch
 
 set incsearch
+set ignorecase
 set smartcase
 
 "set nowrapscan  "search no circle
@@ -362,7 +363,5 @@ nmap <C-f> gg=G
 """"""""""save file"""""""""""""""""
 imap <C-a> <ESC>:w<cr>
 noremap <C-a> :w<cr>
-
-
 
 

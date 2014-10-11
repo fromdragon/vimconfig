@@ -33,6 +33,7 @@ hi Pmenu     ctermfg=2      ctermbg=239      "关键字补全菜单
 hi PmenuSel  cterm=bold ctermfg=2       ctermbg=234   "关键字补全菜单选中项
 hi Search    cterm=bold ctermbg=100 ctermfg=251    "高亮显示
 hi Directory ctermfg=12                      "补全的目录
+hi LineNr ctermfg=247 ctermbg=236            "行号
 
 if version > 700
 
