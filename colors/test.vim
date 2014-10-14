@@ -28,7 +28,6 @@ hi Visual   ctermbg=238					  "圈选区
 hi Title ctermfg=73					  "函数名
 hi Statement ctermfg=136				  "语法关键字
 hi PreProc   ctermfg=5                    "macro
-hi Search 	ctermbg=100                   "highlight 
 hi Pmenu     ctermfg=2      ctermbg=239      "关键字补全菜单 
 hi PmenuSel  cterm=bold ctermfg=2       ctermbg=234   "关键字补全菜单选中项
 hi Search    cterm=bold ctermbg=100 ctermfg=251    "高亮显示
