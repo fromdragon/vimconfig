@@ -20,7 +20,7 @@ endif
 
 let colors_name = "test"
 
-hi Normal 	ctermbg=235     ctermfg=250   "背景色
+hi Normal 	ctermbg=235     ctermfg=247   "背景色
 hi Comment 	ctermbg=235	    ctermfg=110   "注释
 hi CursorLine cterm=bold    ctermbg=236	  "下划线 
 hi Constant ctermbg=235		ctermfg=124	  "tab  <include>
@@ -37,8 +37,8 @@ hi CursorLineNr   cterm=bold ctermfg=130 ctermbg=235    "光标行号
 
 if version > 700
 
-  au InsertEnter * hi StatusLine ctermbg=250 ctermfg=16
-  au InsertLeave * hi StatusLine ctermbg=235  ctermfg=250
+  au InsertEnter * hi StatusLine ctermbg=247 ctermfg=16
+  au InsertLeave * hi StatusLine ctermbg=235  ctermfg=247
   
 endif
 " vim: sw=2
