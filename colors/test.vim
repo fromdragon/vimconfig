@@ -34,11 +34,14 @@ hi Search    cterm=bold ctermbg=100 ctermfg=251    "高亮显示
 hi Directory ctermfg=12                      "补全的目录
 hi LineNr ctermfg=247 ctermbg=236            "行号
 hi CursorLineNr   cterm=bold ctermfg=130 ctermbg=235    "光标行号
+hi StatusLineNC ctermbg=235  ctermfg=136    "状态栏（光标不选中）
+hi StatusLine ctermbg=235  ctermfg=247		"状态栏（光标选中）
 
 if version > 700
 
-  au InsertEnter * hi StatusLine ctermbg=247 ctermfg=16
+  au InsertEnter * hi StatusLine ctermbg=235 ctermfg=Blue
   au InsertLeave * hi StatusLine ctermbg=235  ctermfg=247
-  
+  au WinEnter * hi StatusLine ctermbg=235  ctermfg=247
+
 endif
 " vim: sw=2
