@@ -84,7 +84,8 @@ nmap <leader>ic :set ignorecase!<cr>
 "search no wrap / wrap
 nmap <leader>ws :set wrapscan!<cr>    
 "highlight/no highlight search
-nmap <C-h> :set hlsearch!<cr>
+set hlsearch
+nmap <C-h> :nohl<cr>
 
 nmap <S-Left> :bp<cr>
 nmap <S-Right> :bn<cr>
