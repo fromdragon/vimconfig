@@ -84,6 +84,7 @@ nmap <leader>ic :set ignorecase!<cr>
 "search no wrap / wrap
 nmap <leader>ws :set wrapscan!<cr>    
 "highlight/no highlight search
+"nmap <C-h> :set hlsearch!<cr>
 set hlsearch
 nmap <C-h> :nohl<cr>
 
@@ -176,6 +177,7 @@ set background=dark
 set cursorline "underline
 set t_Co=256
 colorscheme test
+"colorscheme conglongjiang 
 """"""""""""""""""""""""""""""""""""""
 " 增强模式中的命令行自动完成操作
 set wildmenu
@@ -368,3 +370,7 @@ imap <C-a> <ESC>:w<cr>
 noremap <C-a> :w<cr>
 
 
+
+""""""""delete  redundant  space""""""""
+noremap ds :%s/^\s\+//<cr>:%s/\s\+$//<cr>
+""""""""""""""""""""""""""""""""""""""""
