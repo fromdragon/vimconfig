@@ -372,5 +372,5 @@ noremap <C-a> :w<cr>
 
 
 """"""""delete  redundant  space""""""""
-noremap ds :%s/^\s\+//<cr>:%s/\s\+$//<cr>
+noremap <leader>ds :%s/^\s\+//<cr>:%s/\s\+$//<cr>
 """"""""""""""""""""""""""""""""""""""""
