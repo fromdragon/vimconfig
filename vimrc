@@ -363,7 +363,7 @@ endfunction
 "endfunction
 """""""""""""""""""""""""""""""""""""
 """""""""""keymap format"""""""""""""
-nmap <C-f> gg=G
+nmap <leader>ff gg=G
 
 """"""""""save file"""""""""""""""""
 imap <C-a> <ESC>:w<cr>
