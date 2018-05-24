@@ -8,6 +8,7 @@ set autochdir
 "set how many lines of history vim has to remember
 set history=500
 set autoread
+set foldmethod=marker
 
 let mapleader = "\\"
 let g:mapleader = "\\"
