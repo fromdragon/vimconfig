@@ -69,6 +69,7 @@ set incsearch
 set ignorecase
 set smartcase
 
+set foldmethod=marker
 "set nowrapscan  "search no circle
 
 
